@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B5561D91CC1ED7700743B8E /* ReadTSC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReadTSC; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5561D91CC1ED7700743B8E /* cse221Proj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cse221Proj; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5561DC1CC1ED7700743B8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2B5561E61CC1EEA900743B8E /* helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +42,7 @@
 		2B5561D01CC1ED7700743B8E = {
 			isa = PBXGroup;
 			children = (
-				2B5561DB1CC1ED7700743B8E /* ReadTSC */,
+				2B5561DB1CC1ED7700743B8E /* CPU */,
 				2B5561DA1CC1ED7700743B8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +50,27 @@
 		2B5561DA1CC1ED7700743B8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B5561D91CC1ED7700743B8E /* ReadTSC */,
+				2B5561D91CC1ED7700743B8E /* cse221Proj */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B5561DB1CC1ED7700743B8E /* ReadTSC */ = {
+		2B5561DB1CC1ED7700743B8E /* CPU */ = {
 			isa = PBXGroup;
 			children = (
 				2B5561DC1CC1ED7700743B8E /* main.cpp */,
 				2B5561E61CC1EEA900743B8E /* helper.h */,
 			);
+			name = CPU;
 			path = ReadTSC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B5561D81CC1ED7700743B8E /* ReadTSC */ = {
+		2B5561D81CC1ED7700743B8E /* cse221Proj */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B5561E01CC1ED7700743B8E /* Build configuration list for PBXNativeTarget "ReadTSC" */;
+			buildConfigurationList = 2B5561E01CC1ED7700743B8E /* Build configuration list for PBXNativeTarget "cse221Proj" */;
 			buildPhases = (
 				2B5561D51CC1ED7700743B8E /* Sources */,
 				2B5561D61CC1ED7700743B8E /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = ReadTSC;
+			name = cse221Proj;
 			productName = ReadTSC;
-			productReference = 2B5561D91CC1ED7700743B8E /* ReadTSC */;
+			productReference = 2B5561D91CC1ED7700743B8E /* cse221Proj */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2B5561D41CC1ED7700743B8E /* Build configuration list for PBXProject "ReadTSC" */;
+			buildConfigurationList = 2B5561D41CC1ED7700743B8E /* Build configuration list for PBXProject "cse221Proj" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -110,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B5561D81CC1ED7700743B8E /* ReadTSC */,
+				2B5561D81CC1ED7700743B8E /* cse221Proj */,
 			);
 		};
 /* End PBXProject section */
@@ -211,21 +212,21 @@
 		2B5561E11CC1ED7700743B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cse221Proj;
 			};
 			name = Debug;
 		};
 		2B5561E21CC1ED7700743B8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cse221Proj;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B5561D41CC1ED7700743B8E /* Build configuration list for PBXProject "ReadTSC" */ = {
+		2B5561D41CC1ED7700743B8E /* Build configuration list for PBXProject "cse221Proj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B5561DE1CC1ED7700743B8E /* Debug */,
@@ -234,13 +235,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B5561E01CC1ED7700743B8E /* Build configuration list for PBXNativeTarget "ReadTSC" */ = {
+		2B5561E01CC1ED7700743B8E /* Build configuration list for PBXNativeTarget "cse221Proj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B5561E11CC1ED7700743B8E /* Debug */,
 				2B5561E21CC1ED7700743B8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

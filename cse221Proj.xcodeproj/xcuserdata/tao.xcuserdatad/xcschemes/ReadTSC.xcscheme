@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B5561D81CC1ED7700743B8E"
-               BuildableName = "ReadTSC"
-               BlueprintName = "ReadTSC"
-               ReferencedContainer = "container:ReadTSC.xcodeproj">
+               BuildableName = "cse221Proj"
+               BlueprintName = "cse221Proj"
+               ReferencedContainer = "container:cse221Proj.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B5561D81CC1ED7700743B8E"
-            BuildableName = "ReadTSC"
-            BlueprintName = "ReadTSC"
-            ReferencedContainer = "container:ReadTSC.xcodeproj">
+            BuildableName = "cse221Proj"
+            BlueprintName = "cse221Proj"
+            ReferencedContainer = "container:cse221Proj.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B5561D81CC1ED7700743B8E"
-            BuildableName = "ReadTSC"
-            BlueprintName = "ReadTSC"
-            ReferencedContainer = "container:ReadTSC.xcodeproj">
+            BuildableName = "cse221Proj"
+            BlueprintName = "cse221Proj"
+            ReferencedContainer = "container:cse221Proj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2B5561D81CC1ED7700743B8E"
-            BuildableName = "ReadTSC"
-            BlueprintName = "ReadTSC"
-            ReferencedContainer = "container:ReadTSC.xcodeproj">
+            BuildableName = "cse221Proj"
+            BlueprintName = "cse221Proj"
+            ReferencedContainer = "container:cse221Proj.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
