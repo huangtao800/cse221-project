@@ -61,8 +61,7 @@
 				2B5561DC1CC1ED7700743B8E /* main.cpp */,
 				2B5561E61CC1EEA900743B8E /* helper.h */,
 			);
-			name = CPU;
-			path = ReadTSC;
+			path = CPU;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
