@@ -13,7 +13,7 @@ int main(){
 	uint64_t start, end, sum;
 	srand(time(NULL));
 
-	int size = 5;
+	int size = 10;
 
 	for(;size<28;size++){
 		unsigned long long memsize = 1 << size;
@@ -32,7 +32,7 @@ int main(){
 		sum = end - start;
 		double avg = (sum*1.0) / LOOP;
 		free(arr);
-		printf("Array size %llu: average access cycles = %f \n", memsize, avg);
+		printf("Array size %llu: average access cycles = %f \n", memsize/1024, avg);
 	}
 	return 0;
 }

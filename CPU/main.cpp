@@ -298,16 +298,16 @@ double threadSwitch(vector<uint64_t> &v){
 int main(int argc, const char * argv[]) {
     // insert code here...
     vector<uint64_t> v;
-//    double t1 = readOverhead(v);
-//    cout << "read overhead: " << t1 << endl;
-//    double std1 = computeStd(v, t1);
-//    cout << "read std: " << std1 << endl;
+    double t1 = readOverhead(v);
+    cout << "read overhead: " << t1 << endl;
+    double std1 = computeStd(v, t1);
+    cout << "read std: " << std1 << endl;
 
-//    v.clear();
-//    double t2 = loopOverhead(v);
-//    cout << "loop overhead: " << t2 << endl;
-//    double std2 = computeStd(v, t2);
-//    cout << "loop std: " << std2 << endl;
+    v.clear();
+    double t2 = loopOverhead(v);
+    cout << "loop overhead: " << t2 << endl;
+    double std2 = computeStd(v, t2);
+    cout << "loop std: " << std2 << endl;
 
 //    vector<double> times;
 //    vector<double> std;
@@ -331,21 +331,22 @@ int main(int argc, const char * argv[]) {
 //    double std5 = computeStd(v, t5);
 //    cout << "new thread std: " << std5 << endl;
 //
-    v.clear();
-    double t6 = newProcessOverhead(v);
-    cout << "new process overhead: " << t6 << endl;
-    double std6 = computeStd(v, t6);
-    cout << "new process std: " << std6 << endl;
-//
 //    v.clear();
-//    double t7 = processSwitch(v);
-//    cout << "process context switch overhead: " << t7 << endl;
-//    double std7 = computeStd(v, t7);
-//    cout << "process context switch std: " << std7 << endl;
+//    double t6 = newProcessOverhead(v);
+//    cout << "new process overhead: " << t6 << endl;
+//    double std6 = computeStd(v, t6);
+//    cout << "new process std: " << std6 << endl;
+//
+    v.clear();
+    double t7 = processSwitch(v);
+    cout << "process context switch overhead: " << t7 << endl;
+    double std7 = computeStd(v, t7);
+    cout << "process context switch std: " << std7 << endl;
     
 //    v.clear();
 //    double t8 = threadSwitch(v);
 //    cout << "thread context switch overhead: " << t8 << endl;
 //    double std8 = computeStd(v, t8);
 //    cout << "thread context switch std: " << std8 << endl;
+    return 0;
 }
