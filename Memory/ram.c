@@ -5,6 +5,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdint.h>
 #include "../CPU/helper.h"
 
 #define COUNT 1000000
