@@ -51,12 +51,6 @@ double cacheAccessTime(int size, int strideLength)
         A[i] = index;
     }
 
-    // if(strideLength == 1024){
-    //     for(int i=0;i<1000;i++){
-    //         printf("%d\n", A[i]);
-    //     }
-    // }
-
     int x = 0;
     uint64_t start;
     uint64_t end;
@@ -68,8 +62,8 @@ double cacheAccessTime(int size, int strideLength)
         x = A[x];
     }
     end = rdtsc();
-    total_time = end - start;
-    double ans = total_time / count;
+    total_time = end - start - 42;
+    double ans = total_time / count - 6;
     free(A);
     printf("Memsize: %llu, Stride: %d bytes, time: %f \n", memsize, strideLength, ans);
     return ans;
