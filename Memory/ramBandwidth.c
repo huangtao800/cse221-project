@@ -24,7 +24,7 @@ void readBandwidth(){
 		int i = 0;
 
 		start = rdtsc();
-		for(;i<arrsize;i++){
+		for(;i<arrsize;i+=8){
 			long t = arr[i];
 		}
 		end = rdtsc();
@@ -54,7 +54,7 @@ void writeBandwidth(){
 		int i = 0;
 
 		start = rdtsc();
-		for(;i<arrsize;i++){
+		for(;i<arrsize;i+=8){
 			arr[i] = 1;
 		}
 		end = rdtsc();
