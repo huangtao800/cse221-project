@@ -10,7 +10,7 @@
 int main(int argc , char *argv[])
 {
 
-	int loops = 1000;
+	int loops = 100;
 
 	int port = 8003;
 
@@ -43,7 +43,7 @@ int main(int argc , char *argv[])
      
     //Accept incoming connection
     puts("Waiting   ...  \n");
-    char msg[100000];
+    char msg[64];
 
     //accept connection from an incoming client
     while(1)

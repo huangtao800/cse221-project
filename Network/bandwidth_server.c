@@ -69,14 +69,14 @@ int main(int argc , char *argv[])
         printf ("receive : %d\n", n);
         diff = end - start;
         
-        printf ("PEAK bandwidth is : %f MB/s \n", 10*(size/(1024*1.0*1024)) * (2.3e9 / diff) );
+        printf ("PEAK bandwidth is : %f MB/s \n", 10*(size/(1024*1.0*1024)) * (2.5e9 / diff) );
         
         close(client_sock);
         return 0;
     }
     
     close(server_sock);
-
+    free(msg);
     puts("Finish calculating \n");
      
     return 0;

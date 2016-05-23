@@ -15,7 +15,7 @@
 int main(int argc , char *argv[])
 {      
 	
-	int loops = 1000;
+	int loops = 100;
 	int port = 8003;
     // unsigned long long s1, e1;
 
@@ -42,18 +42,18 @@ int main(int argc , char *argv[])
     // e1 = rdtsc();
 
     // Computing round trip time
-    char msg[100000];
+    char msg[64];
     unsigned long long start,end;
 	unsigned long long total = 0;
 	int j = 0;
-    long list[loops];
+    double list[loops];
     for (; j < loops; ++j) {
         start = rdtsc();
         send(sockfd, &msg, 64, 0);
         recv(sockfd, &msg, 64, 0);
         end = rdtsc();
 		total += (end - start);
-        list[j] = end - start;
+        list[j] = (end - start) / 2.5 / 1000000;
     }
     close(sockfd);
     long avg = total / loops;
@@ -64,7 +64,7 @@ int main(int argc , char *argv[])
     double std = 0.0;
     double sum = 0.0;
     for(j=0;j<loops;j++){
-        sum += (list[j] - avg) * (list[j] - avg);
+        sum += (list[j] - ti) * (list[j] - ti);
     }
     std = sqrt(sum / loops);
     printf ("Std : %f\n", std);

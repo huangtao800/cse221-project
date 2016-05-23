@@ -49,8 +49,9 @@ int main(int argc , char *argv[])
         return -1;
     }
     close(sockfd);
+    free(msg);
     total = end - start;
-    printf ("PEAK bandwidth is : %f MB/s \n", 10*(size/(1024*1.0*1024)) * (2.3e9 / total) );
+    printf ("PEAK bandwidth is : %f MB/s \n", 10*(size/(1024*1.0*1024)) * (2.5e9 / total) );
     
 	return 0;
 }
