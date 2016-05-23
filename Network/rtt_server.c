@@ -43,7 +43,7 @@ int main(int argc , char *argv[])
      
     //Accept incoming connection
     puts("Waiting   ...  \n");
-    char msg='a';
+    char msg[100000];
 
     //accept connection from an incoming client
     while(1)
@@ -57,8 +57,8 @@ int main(int argc , char *argv[])
 
 		int j = 0;
         for (; j < loops; ++j) {
-            recv(newsockfd, &msg, 1, 0);
-            send(newsockfd, &msg, 1, 0);
+            recv(newsockfd, msg, 64, 0);
+            send(newsockfd, msg, 64, 0);
         }
     }
 
