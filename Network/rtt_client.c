@@ -5,6 +5,7 @@
 #include <sys/socket.h> 
 #include <netinet/in.h>
 #include <stdlib.h>
+#include <math.h>
 #include "../CPU/helper.h"
 
 int main(int argc , char *argv[])
@@ -36,16 +37,29 @@ int main(int argc , char *argv[])
     unsigned long long start,end;
 	unsigned long long total = 0;
 	int j = 0;
+    long list[loops];
     for (; j < loops; ++j) {
         start = rdtsc();
         send(sockfd, &msg, 1, 0);
         recv(sockfd, &msg, 1, 0);
         end = rdtsc();
 		total += (end - start);
+        list[j] = end - start;
     }
     close(sockfd);
-    printf ("Round Trip Cycles are : %llu\n", total/loops);
-	printf("finished \n");
-    
+    long avg = total / loops;
+    printf ("Round Trip Cycles are : %ld\n", avg);
+	double ti = avg / 2.5 / (1000000);
+    printf ("Time: %f\n", ti);
+
+    double std = 0.0;
+    double sum = 0.0;
+    for(j=0;j<loops;j++){
+        sum += (list[j] - avg) * (list[j] - avg);
+    }
+    std = sqrt(sum / loops);
+    printf ("Std : %f\n", std);
+
+    printf("finished \n");
 	return 0;
 }
