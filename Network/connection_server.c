@@ -63,7 +63,10 @@ int main(){
 
 		diff = end - start;
 
+        double ti = diff / 2.5 / (1000000);
+
 		printf("connection shutdwon cycle : %llu \n", diff);
+        printf("Tear down time: %f\n", ti);
     }
     
     close(server_sock);

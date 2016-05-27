@@ -50,4 +50,6 @@ int main(int argc , char *argv[]){
 	end = rdtsc();
 	total = end - start;
 	printf("Close cycles: %llu\n", total);
+	ti = total / 2.5 / (1000000);
+	printf("Close time: %f\n", ti);
 }
