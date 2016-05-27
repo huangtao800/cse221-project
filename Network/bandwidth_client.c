@@ -40,7 +40,6 @@ int main(int argc , char *argv[])
 	int j = 0;
     int n;
     start = rdtsc();
-    
     for (; j < loops; ++j) {
         n = send(sockfd, msg, size, 0);
     }
